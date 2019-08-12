@@ -5,15 +5,19 @@ VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nop", "Nop", "{39B3F54D-41BE-42A0-AFE2-0B7A71D41983}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nop.Web", "Nop.Web\Nop.Web.csproj", "{E383F62A-3FB0-43A8-8FD6-99D8D6922B8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nop.Web", "Nop\Nop.Web\Nop.Web.csproj", "{E383F62A-3FB0-43A8-8FD6-99D8D6922B8A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nop.Core", "Nop.Core\Nop.Core.csproj", "{195C2F00-AB1E-4412-A1BF-F847CF91F3EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nop.Core", "Nop\Nop.Core\Nop.Core.csproj", "{195C2F00-AB1E-4412-A1BF-F847CF91F3EA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nop.Web.Framework", "Nop.Web.Framework\Nop.Web.Framework.csproj", "{03AE4EAF-A3A0-45EF-8FD1-40B441C5CCCE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nop.Web.Framework", "Nop\Nop.Web.Framework\Nop.Web.Framework.csproj", "{03AE4EAF-A3A0-45EF-8FD1-40B441C5CCCE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nop.Services", "Nop.Services\Nop.Services.csproj", "{9DD185A7-AE92-49A7-8E8F-D4739EDD0CDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nop.Services", "Nop\Nop.Services\Nop.Services.csproj", "{9DD185A7-AE92-49A7-8E8F-D4739EDD0CDB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DistributedTransaction", "DistributedTransaction", "{3351B4AC-4049-4400-A0D2-2A34708B7BB5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Distributed", "Distributed", "{880015E7-836F-4780-953A-6B497A35FD09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KetamaHash", "Distributed\KetamaHash\KetamaHash.csproj", "{70F35DFC-A751-4392-8DB4-C53CAA8D7444}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +41,10 @@ Global
 		{9DD185A7-AE92-49A7-8E8F-D4739EDD0CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DD185A7-AE92-49A7-8E8F-D4739EDD0CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DD185A7-AE92-49A7-8E8F-D4739EDD0CDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70F35DFC-A751-4392-8DB4-C53CAA8D7444}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70F35DFC-A751-4392-8DB4-C53CAA8D7444}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70F35DFC-A751-4392-8DB4-C53CAA8D7444}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70F35DFC-A751-4392-8DB4-C53CAA8D7444}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +54,7 @@ Global
 		{195C2F00-AB1E-4412-A1BF-F847CF91F3EA} = {39B3F54D-41BE-42A0-AFE2-0B7A71D41983}
 		{03AE4EAF-A3A0-45EF-8FD1-40B441C5CCCE} = {39B3F54D-41BE-42A0-AFE2-0B7A71D41983}
 		{9DD185A7-AE92-49A7-8E8F-D4739EDD0CDB} = {39B3F54D-41BE-42A0-AFE2-0B7A71D41983}
+		{70F35DFC-A751-4392-8DB4-C53CAA8D7444} = {880015E7-836F-4780-953A-6B497A35FD09}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C297F8C0-C746-4ECE-920C-D7E3629C1759}
