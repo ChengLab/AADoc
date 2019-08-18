@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AA.FrameWork" Version="1.0.2" />
+    <PackageReference Include="AA.ServiceBus" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AABase.Common\AABase.Common.csproj" />
+    <ProjectReference Include="..\AABase.DataAccess\AABase.DataAccess.csproj" />
+    <ProjectReference Include="..\AABase.Dto\AABase.Dto.csproj" />
+    <ProjectReference Include="..\AABase.EntityEnum\AABase.EntityEnum.csproj" />
+    <ProjectReference Include="..\AABase.ServiceBus.MsgContracts\AABase.ServiceBus.MsgContracts.csproj" />
+  </ItemGroup>
+
+</Project>

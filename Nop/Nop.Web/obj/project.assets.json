@@ -8190,7 +8190,7 @@
       ]
     },
     "System.Diagnostics.FileVersionInfo/4.3.0": {
-      "sha512": "EoKa2vcLGKdt8oyNOO/wr1exGuK6/CxQdOcuyYHbVm2JNrsDpU9mAmlIpbAEix+3y0XNpzfyMSFayfO5QaZgXQ==",
+      "sha512": "omCF64wzQ3Q2CeIqkD6lmmxeMZtGHUmzgFMPjfVaOsyqpR66p/JaZzManMw1s33osoAb5gqpncsjie67+yUPHQ==",
       "type": "package",
       "path": "system.diagnostics.fileversioninfo/4.3.0",
       "files": [
@@ -8231,7 +8231,7 @@
       ]
     },
     "System.Diagnostics.StackTrace/4.3.0": {
-      "sha512": "t4O29IfAMHPBWNwiEkjNxsiXfScBgx/VLgTBbMoDRwpqjyg8gk+O4UK3LjDI1WIX7VDRGRgl+Q9kiOZz/fbjxQ==",
+      "sha512": "BiHg0vgtd35/DM9jvtaC1eKRpWZxr0gcQd643ABG7GnvSlf5pOkY2uyd42mMOJoOmKvnpNj0F4tuoS1pacTwYw==",
       "type": "package",
       "path": "system.diagnostics.stacktrace/4.3.0",
       "files": [
@@ -10753,7 +10753,7 @@
       ]
     },
     "System.Security.Cryptography.OpenSsl/4.3.0": {
-      "sha512": "h4CEgOgv5PKVF/HwaHzJRiVboL2THYCou97zpmhjghx5frc7fIvlkY1jL+lnIQyChrJDMNEXS6r7byGif8Cy4w==",
+      "sha512": "vOYy7Jv9KsG3ld2hLt0GoERd82SZi4BelrbXLwI9yFBYX7kpbvUCWYo4eyevk47cuJXZ9ZLVAryANcc7iY71aA==",
       "type": "package",
       "path": "system.security.cryptography.openssl/4.3.0",
       "files": [
@@ -11603,7 +11603,7 @@
       ]
     },
     "System.ValueTuple/4.3.0": {
-      "sha512": "jCVRLKTVVinIRih6MijRZxoSeEDBkpX3XvjEG4cN9UEM7w6IC1fvPuL6A8jsKwCNkuOFrjELyLk9RRH0/ql+8Q==",
+      "sha512": "cNLEvBX3d6MMQRZe3SMFNukVbitDAEpVZO17qa0/2FHxZ7Y7PpFRpr6m2615XYM/tYYYf0B+WyHNujqIw8Luwg==",
       "type": "package",
       "path": "system.valuetuple/4.3.0",
       "files": [
@@ -11797,7 +11797,7 @@
       ]
     },
     "System.Xml.XmlSerializer/4.3.0": {
-      "sha512": "MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
+      "sha512": "VShQJhOxgD/5M2Z1IWm1vMaSqlbjo1zdFf8H7Ahte6bTvSUhUko/gDpAVVhGgGgTDeue4QyNg1fu1Zz2GKSEuQ==",
       "type": "package",
       "path": "system.xml.xmlserializer/4.3.0",
       "files": [
@@ -11969,23 +11969,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
+    "C:\\Users\\CY\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\下载代码\\Github\\AA.Doc\\AADoc\\Nop\\Nop.Web\\Nop.Web.csproj",
+      "projectUniqueName": "D:\\codelab\\github\\AADoc\\Nop\\Nop.Web\\Nop.Web.csproj",
       "projectName": "Nop.Web",
-      "projectPath": "E:\\下载代码\\Github\\AA.Doc\\AADoc\\Nop\\Nop.Web\\Nop.Web.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "E:\\下载代码\\Github\\AA.Doc\\AADoc\\Nop\\Nop.Web\\obj\\",
+      "projectPath": "D:\\codelab\\github\\AADoc\\Nop\\Nop.Web\\Nop.Web.csproj",
+      "packagesPath": "C:\\Users\\CY\\.nuget\\packages\\",
+      "outputPath": "D:\\codelab\\github\\AADoc\\Nop\\Nop.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\CY\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11993,20 +11993,20 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://188.188.1.208:8050/nuget": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "http://www.nuget.org/api/v2/": {},
+        "https://www.nuget.org/api/v2/": {}
       },
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "E:\\下载代码\\Github\\AA.Doc\\AADoc\\Nop\\Nop.Core\\Nop.Core.csproj": {
-              "projectPath": "E:\\下载代码\\Github\\AA.Doc\\AADoc\\Nop\\Nop.Core\\Nop.Core.csproj"
+            "D:\\codelab\\github\\AADoc\\Nop\\Nop.Core\\Nop.Core.csproj": {
+              "projectPath": "D:\\codelab\\github\\AADoc\\Nop\\Nop.Core\\Nop.Core.csproj"
             },
-            "E:\\下载代码\\Github\\AA.Doc\\AADoc\\Nop\\Nop.Services\\Nop.Services.csproj": {
-              "projectPath": "E:\\下载代码\\Github\\AA.Doc\\AADoc\\Nop\\Nop.Services\\Nop.Services.csproj"
+            "D:\\codelab\\github\\AADoc\\Nop\\Nop.Services\\Nop.Services.csproj": {
+              "projectPath": "D:\\codelab\\github\\AADoc\\Nop\\Nop.Services\\Nop.Services.csproj"
             },
-            "E:\\下载代码\\Github\\AA.Doc\\AADoc\\Nop\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
-              "projectPath": "E:\\下载代码\\Github\\AA.Doc\\AADoc\\Nop\\Nop.Web.Framework\\Nop.Web.Framework.csproj"
+            "D:\\codelab\\github\\AADoc\\Nop\\Nop.Web.Framework\\Nop.Web.Framework.csproj": {
+              "projectPath": "D:\\codelab\\github\\AADoc\\Nop\\Nop.Web.Framework\\Nop.Web.Framework.csproj"
             }
           }
         }

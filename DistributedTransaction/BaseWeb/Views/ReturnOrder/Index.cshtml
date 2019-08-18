@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+        退货单
+        <small>列表</small>
+    </h1>
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <div class="row">
+        <div class="col-xs-2">
+            <button class="btn btn-block btn-success fa fa-plus add" type="button">模拟新增退货单</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-body">
+                    <table id="bill_list" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>单据编号</th>
+                                <th>状态</th>
+                                <th>创建时间</th>
+                                <th>修改时间</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                        <tfoot></tfoot>
+                    </table>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+
+
+</section>
+<!-- /.content -->
+
+
+@section pagejs
+{
+<script src="~/js/biz/returnOrder.js"></script>
+ }

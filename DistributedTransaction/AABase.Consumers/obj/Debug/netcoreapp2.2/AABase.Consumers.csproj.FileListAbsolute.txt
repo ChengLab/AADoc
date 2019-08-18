@@ -1,0 +1,16 @@
+E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\AABase.Consumers\bin\Debug\netcoreapp2.2\AABase.Consumers.deps.json
+E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\AABase.Consumers\bin\Debug\netcoreapp2.2\AABase.Consumers.runtimeconfig.json
+E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\AABase.Consumers\bin\Debug\netcoreapp2.2\AABase.Consumers.runtimeconfig.dev.json
+E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\AABase.Consumers\bin\Debug\netcoreapp2.2\AABase.Consumers.dll
+E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\AABase.Consumers\bin\Debug\netcoreapp2.2\AABase.Consumers.pdb
+E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\AABase.Consumers\obj\Debug\netcoreapp2.2\AABase.Consumers.csprojAssemblyReference.cache
+E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\AABase.Consumers\obj\Debug\netcoreapp2.2\AABase.Consumers.csproj.CoreCompileInputs.cache
+E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\AABase.Consumers\obj\Debug\netcoreapp2.2\AABase.Consumers.AssemblyInfoInputs.cache
+E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\AABase.Consumers\obj\Debug\netcoreapp2.2\AABase.Consumers.AssemblyInfo.cs
+E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\AABase.Consumers\obj\Debug\netcoreapp2.2\AABase.Consumers.dll
+E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\AABase.Consumers\obj\Debug\netcoreapp2.2\AABase.Consumers.pdb
+E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\AABase.Consumers\bin\Debug\netcoreapp2.2\AABase.Common.dll
+E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\AABase.Consumers\bin\Debug\netcoreapp2.2\AABase.ServiceBus.MsgContracts.dll
+E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\AABase.Consumers\bin\Debug\netcoreapp2.2\AABase.Common.pdb
+E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\AABase.Consumers\bin\Debug\netcoreapp2.2\AABase.ServiceBus.MsgContracts.pdb
+E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\AABase.Consumers\obj\Debug\netcoreapp2.2\AABase.Consumers.csproj.CopyComplete

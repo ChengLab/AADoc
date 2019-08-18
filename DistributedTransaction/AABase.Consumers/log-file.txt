@@ -1,0 +1,14 @@
+[Header]
+2019-08-15 17:50:13,860 [4] DEBUG AABase.Consumers.SecurityServiceConsumer [(null)] <(null)> - 接收到退货单编号:ee86f310-e80d-47b1-b7cd-94814143885c 
+2019-08-15 17:51:09,913 [4] DEBUG AABase.Consumers.SecurityServiceConsumer [(null)] <(null)> - 接收到退货单编号:2f8aa3bc-54ef-4656-b45c-79f5fe0937f4 
+2019-08-15 17:58:20,900 [13] DEBUG AABase.Consumers.SecurityServiceConsumer [(null)] <(null)> - 接收到退货单编号:cf937db0-0db9-4296-9006-0609de20bac4 
+[Header]
+2019-08-16 09:18:31,693 [18] DEBUG AABase.Consumers.SecurityServiceConsumer [(null)] <(null)> - 接收到退货单编号:ee86f310-e80d-47b1-b7cd-94814143885c 
+2019-08-16 09:18:43,003 [15] DEBUG AABase.Consumers.SecurityServiceConsumer [(null)] <(null)> - 接收到退货单编号:2f8aa3bc-54ef-4656-b45c-79f5fe0937f4 
+2019-08-16 09:18:47,975 [15] DEBUG AABase.Consumers.SecurityServiceConsumer [(null)] <(null)> - 接收到退货单编号:cf937db0-0db9-4296-9006-0609de20bac4 
+[Header]
+2019-08-16 13:49:34,389 [14] DEBUG AABase.Consumers.SecurityServiceConsumer [(null)] <(null)> - 接收到退货单编号:2f8aa3bc-54ef-4656-b45c-79f5fe0937f4 
+[Header]
+2019-08-17 17:33:30,707 [6] DEBUG AABase.Consumers.SecurityServiceConsumer [(null)] <(null)> - 接收到退货单编号:dfe24435-12c6-4206-8232-f631d0a17852 
+[Header]
+2019-08-17 17:38:13,603 [4] DEBUG AABase.Consumers.SecurityServiceConsumer [(null)] <(null)> - 接收到退货单编号:3e2dd569-b2f3-4fb5-a204-585036265065 

@@ -1,0 +1,1080 @@
+[Header]
+2019-08-16 15:20:49,769 [1] INFO  Quartz.Impl.StdSchedulerFactory [(null)] <(null)> - Default Quartz.NET properties loaded from embedded resource file
+2019-08-16 15:20:49,880 [1] DEBUG Quartz.Simpl.TaskSchedulingThreadPool [(null)] <(null)> - TaskSchedulingThreadPool configured with max concurrency of 10 and TaskScheduler ThreadPoolTaskScheduler.
+2019-08-16 15:20:49,897 [1] INFO  Quartz.Core.SchedulerSignalerImpl [(null)] <(null)> - Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+2019-08-16 15:20:49,938 [1] INFO  Quartz.Core.QuartzScheduler [(null)] <(null)> - Quartz Scheduler v.3.0.7.0 created.
+2019-08-16 15:20:49,940 [1] INFO  Quartz.Simpl.RAMJobStore [(null)] <(null)> - RAMJobStore initialized.
+2019-08-16 15:20:49,949 [1] INFO  Quartz.Core.QuartzScheduler [(null)] <(null)> - Scheduler meta-data: Quartz Scheduler (v3.0.7.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-08-16 15:20:49,949 [1] INFO  Quartz.Impl.StdSchedulerFactory [(null)] <(null)> - Quartz scheduler 'DefaultQuartzScheduler' initialized
+2019-08-16 15:20:49,949 [1] INFO  Quartz.Impl.StdSchedulerFactory [(null)] <(null)> - Quartz scheduler version: 3.0.7.0
+2019-08-16 15:20:49,962 [1] INFO  Quartz.Core.QuartzScheduler [(null)] <(null)> - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2019-08-16 15:20:49,966 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 0 triggers
+2019-08-16 15:20:50,034 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:20:50,049 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:20:50,081 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:20:50,136 [7] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:20:50,140 [7] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:20:50,174 [7] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:20:50,183 [7] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:21:00,002 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:21:00,002 [11] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:21:00,002 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:21:00,002 [11] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:21:00,003 [11] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:21:00,003 [11] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:21:10,001 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:21:10,001 [11] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:21:10,001 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:21:10,002 [11] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:21:10,002 [11] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:21:10,002 [11] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:21:20,005 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:21:20,005 [14] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:21:20,005 [14] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:21:20,005 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:21:20,006 [14] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:21:20,007 [14] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:21:30,001 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:21:30,001 [14] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:21:30,001 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:21:30,001 [14] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:21:30,002 [14] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:21:30,002 [14] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:21:40,005 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:21:40,006 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:21:40,006 [13] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:22:09,522 [13] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:22:09,523 [13] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:22:09,523 [13] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:22:09,524 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:22:09,524 [19] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:22:09,524 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:22:09,524 [19] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:22:09,525 [19] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:22:09,525 [19] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:22:09,527 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:22:09,527 [13] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:22:09,527 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:22:09,527 [13] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:22:09,527 [13] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:22:09,529 [13] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:22:10,001 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:22:10,001 [13] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:22:10,002 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:22:10,002 [13] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:22:10,002 [13] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:22:10,002 [13] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:22:20,003 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:22:20,003 [16] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:22:20,003 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:22:20,003 [16] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:22:20,004 [16] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:22:20,004 [16] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:22:30,002 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:22:30,002 [13] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:22:30,002 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:22:30,002 [13] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:22:30,002 [13] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:22:30,003 [13] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:22:40,639 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:23:10,133 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:23:10,139 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:23:12,015 [32] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:23:38,546 [32] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:23:38,546 [32] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:23:38,546 [28] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:23:38,546 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:23:38,546 [32] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:23:38,546 [28] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:23:38,546 [28] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:23:38,547 [28] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:23:38,548 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:23:38,549 [29] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:23:38,549 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:23:38,549 [29] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:23:38,549 [29] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:23:38,549 [29] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:23:38,551 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:23:38,551 [23] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:23:38,551 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:23:38,552 [23] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:23:38,552 [23] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:23:38,553 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:23:38,556 [23] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:23:38,556 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:23:38,557 [29] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:23:38,557 [29] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:23:38,557 [29] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:23:38,557 [29] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:23:38,559 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:23:38,559 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:23:38,559 [23] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:23:38,559 [23] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:23:38,559 [23] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:23:38,564 [23] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:23:40,001 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:23:40,002 [23] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:23:40,002 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:23:40,002 [23] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:23:40,002 [23] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:23:40,002 [23] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:23:50,001 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:23:50,002 [23] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:23:50,002 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:23:50,002 [23] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:23:50,002 [23] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:23:50,002 [23] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:24:00,001 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:24:00,001 [23] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:24:00,002 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:24:00,002 [23] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:24:00,002 [23] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:24:00,002 [23] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:24:10,001 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:24:10,001 [23] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:24:10,001 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:24:10,002 [23] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:24:10,002 [23] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:24:10,002 [23] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:24:20,001 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:24:20,001 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:24:20,001 [32] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:24:20,001 [32] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:24:20,002 [32] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:24:20,002 [32] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:24:30,001 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:24:30,002 [23] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:24:30,002 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:24:30,002 [23] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:24:30,002 [23] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:24:30,002 [23] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:24:40,002 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:24:40,002 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:24:40,002 [23] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:24:40,002 [23] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:24:40,002 [23] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:24:40,003 [23] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:24:50,002 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:24:50,002 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:24:50,002 [32] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:24:50,003 [32] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:24:50,003 [32] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.GetAll()
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:24:50,003 [32] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+[Header]
+2019-08-16 15:25:03,471 [1] INFO  Quartz.Impl.StdSchedulerFactory [(null)] <(null)> - Default Quartz.NET properties loaded from embedded resource file
+2019-08-16 15:25:03,561 [1] DEBUG Quartz.Simpl.TaskSchedulingThreadPool [(null)] <(null)> - TaskSchedulingThreadPool configured with max concurrency of 10 and TaskScheduler ThreadPoolTaskScheduler.
+2019-08-16 15:25:03,575 [1] INFO  Quartz.Core.SchedulerSignalerImpl [(null)] <(null)> - Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+2019-08-16 15:25:03,597 [1] INFO  Quartz.Core.QuartzScheduler [(null)] <(null)> - Quartz Scheduler v.3.0.7.0 created.
+2019-08-16 15:25:03,598 [1] INFO  Quartz.Simpl.RAMJobStore [(null)] <(null)> - RAMJobStore initialized.
+2019-08-16 15:25:03,601 [1] INFO  Quartz.Core.QuartzScheduler [(null)] <(null)> - Scheduler meta-data: Quartz Scheduler (v3.0.7.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-08-16 15:25:03,601 [1] INFO  Quartz.Impl.StdSchedulerFactory [(null)] <(null)> - Quartz scheduler 'DefaultQuartzScheduler' initialized
+2019-08-16 15:25:03,601 [1] INFO  Quartz.Impl.StdSchedulerFactory [(null)] <(null)> - Quartz scheduler version: 3.0.7.0
+2019-08-16 15:25:03,613 [1] INFO  Quartz.Core.QuartzScheduler [(null)] <(null)> - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2019-08-16 15:25:03,617 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 0 triggers
+2019-08-16 15:25:03,676 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:25:10,009 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:25:10,028 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:25:10,053 [12] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:25:10,055 [12] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:25:10,081 [12] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:25:10,089 [12] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:25:20,001 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:25:20,001 [12] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:25:20,001 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:25:20,002 [12] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:25:20,002 [12] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:25:20,002 [12] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:25:30,002 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:25:30,003 [12] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:25:30,003 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:25:30,003 [12] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:25:30,003 [12] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:25:30,003 [12] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:25:40,003 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:25:40,003 [9] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:25:40,003 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:25:40,003 [9] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:25:40,004 [9] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:25:40,004 [9] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:25:50,002 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:25:50,002 [12] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:25:50,002 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:25:50,002 [12] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:25:50,002 [12] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:25:50,003 [12] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:26:00,002 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:26:00,002 [12] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:26:00,002 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:26:00,002 [12] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:26:00,002 [12] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:26:00,003 [12] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:26:10,003 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:26:10,003 [12] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:26:10,003 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:26:10,003 [12] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:26:10,004 [12] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:26:10,004 [12] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:26:20,003 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:26:20,003 [9] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:26:20,004 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:26:20,004 [9] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:26:20,004 [9] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:26:20,005 [9] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:26:30,001 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:26:30,001 [11] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:26:30,001 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:26:30,001 [11] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:26:30,002 [11] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:26:30,002 [11] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:26:40,001 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:26:40,001 [11] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:26:40,001 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:26:40,001 [11] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:26:40,002 [11] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:26:40,002 [11] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:26:50,001 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:26:50,002 [11] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:26:50,002 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:26:50,002 [11] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:26:50,002 [11] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:26:50,002 [11] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:27:00,001 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:27:00,002 [11] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:27:00,002 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:27:00,002 [11] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:27:00,002 [11] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:27:00,002 [11] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:27:10,008 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:27:10,009 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:27:10,010 [11] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:27:10,010 [11] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:27:10,010 [11] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:27:10,010 [11] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:27:20,001 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:27:20,002 [9] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:27:20,002 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:27:20,002 [9] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:27:20,002 [9] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:27:20,002 [9] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:27:30,001 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:27:30,002 [9] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:27:30,002 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:27:30,002 [9] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:27:30,002 [9] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:27:30,002 [9] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:27:40,004 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:27:40,005 [17] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:27:40,005 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:27:40,005 [17] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:27:40,006 [17] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:27:40,007 [17] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:27:50,001 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:27:50,001 [11] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:27:50,001 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:27:50,001 [11] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:27:50,002 [11] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:27:50,002 [11] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:28:00,002 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:28:00,002 [11] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:28:00,002 [11] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:28:00,003 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:28:00,003 [11] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:28:00,003 [11] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:28:10,002 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:28:10,002 [17] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:28:10,002 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:28:10,002 [17] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:28:10,003 [17] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:28:10,003 [17] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:28:20,004 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:28:20,004 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:28:20,004 [11] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:28:20,005 [11] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:28:20,005 [11] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:28:20,006 [11] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:28:30,001 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:28:30,002 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:28:30,002 [9] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:28:30,002 [9] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:28:30,002 [9] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:28:30,002 [9] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:28:40,001 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:28:40,001 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:28:40,001 [9] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:28:40,001 [9] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:28:40,001 [9] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:28:40,002 [9] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:28:50,002 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:28:50,002 [11] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:28:50,002 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:28:50,002 [11] ERROR Quartz.Core.JobRunShell [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an unhandled Exception: 
+System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+2019-08-16 15:28:50,002 [11] ERROR Quartz.Core.ErrorLogger [(null)] <(null)> - Job jobGroup1.RetryServiceJob threw an exception.
+Quartz.SchedulerException: Job threw an unhandled exception. ---> System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191
+   --- End of inner exception stack trace --- [See nested exception: System.Exception: AA dapper context is empty
+   at AA.Dapper.DapperContext.get_Current()
+   at AA.Dapper.Repositories.DapperRepository`1.Get(Object id)
+   at Base.Timing.AAJob.RetryServiceJob.Execute(IJobExecutionContext context) in E:\下载代码\Github\AA.Doc\AADoc\DistributedTransaction\Base.Timing\AAJob\RetryServiceJob.cs:line 26
+   at Quartz.Core.JobRunShell.Run(CancellationToken cancellationToken) in C:\projects\quartznet\src\Quartz\Core\JobRunShell.cs:line 191]
+2019-08-16 15:28:50,003 [11] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+[Header]
+2019-08-16 15:47:54,171 [1] INFO  Quartz.Impl.StdSchedulerFactory [(null)] <(null)> - Default Quartz.NET properties loaded from embedded resource file
+2019-08-16 15:47:54,249 [1] DEBUG Quartz.Simpl.TaskSchedulingThreadPool [(null)] <(null)> - TaskSchedulingThreadPool configured with max concurrency of 10 and TaskScheduler ThreadPoolTaskScheduler.
+2019-08-16 15:47:54,260 [1] INFO  Quartz.Core.SchedulerSignalerImpl [(null)] <(null)> - Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+2019-08-16 15:47:54,276 [1] INFO  Quartz.Core.QuartzScheduler [(null)] <(null)> - Quartz Scheduler v.3.0.7.0 created.
+2019-08-16 15:47:54,277 [1] INFO  Quartz.Simpl.RAMJobStore [(null)] <(null)> - RAMJobStore initialized.
+2019-08-16 15:47:54,281 [1] INFO  Quartz.Core.QuartzScheduler [(null)] <(null)> - Scheduler meta-data: Quartz Scheduler (v3.0.7.0) 'DefaultQuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-08-16 15:47:54,281 [1] INFO  Quartz.Impl.StdSchedulerFactory [(null)] <(null)> - Quartz scheduler 'DefaultQuartzScheduler' initialized
+2019-08-16 15:47:54,281 [1] INFO  Quartz.Impl.StdSchedulerFactory [(null)] <(null)> - Quartz scheduler version: 3.0.7.0
+2019-08-16 15:47:54,290 [1] INFO  Quartz.Core.QuartzScheduler [(null)] <(null)> - Scheduler DefaultQuartzScheduler_$_NON_CLUSTERED started.
+2019-08-16 15:47:54,293 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 0 triggers
+2019-08-16 15:47:54,339 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:48:00,012 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:48:00,017 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:48:00,045 [7] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:48:00,261 [7] DEBUG Base.Timing.AAJob.RetryServiceJob [(null)] <(null)> - 重试服务
+2019-08-16 15:48:00,265 [7] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:48:10,005 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:48:10,005 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:48:10,005 [16] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:48:22,600 [16] DEBUG Base.Timing.AAJob.RetryServiceJob [(null)] <(null)> - 重试服务
+2019-08-16 15:48:22,600 [16] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
+2019-08-16 15:48:22,603 [6] DEBUG Quartz.Simpl.SimpleJobFactory [(null)] <(null)> - Producing instance of Job 'jobGroup1.RetryServiceJob', class=Base.Timing.AAJob.RetryServiceJob
+2019-08-16 15:48:22,603 [6] DEBUG Quartz.Core.QuartzSchedulerThread [(null)] <(null)> - Batch acquisition of 1 triggers
+2019-08-16 15:48:22,603 [15] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Calling Execute on job jobGroup1.RetryServiceJob
+2019-08-16 15:48:22,605 [15] DEBUG Base.Timing.AAJob.RetryServiceJob [(null)] <(null)> - 重试服务
+2019-08-16 15:48:22,605 [15] DEBUG Quartz.Core.JobRunShell [(null)] <(null)> - Trigger instruction : NoInstruction
